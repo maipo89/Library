@@ -8,7 +8,12 @@ function Sections(props) {
 
   function onChange(event) {
     const value = event.target.value
-    setNewValue(newValue.indexOf(value) > -1 === false ? prevValue => {return [...prevValue, value]} : prevValue => {return [...prevValue]}) 
+    setNewValue(newValue.indexOf(value) > -1 === false ? prevValue => {return [...prevValue, value]} : prevValue => {return [...prevValue]})
+  }
+
+  function clickFunction(event) {
+    const value = event.target.value
+    setNewValue(newValue.filter(e => e !== value)) 
   }
 
   return (
@@ -17,7 +22,7 @@ function Sections(props) {
         <div className="options-container">
           {sections.map((section, index) => {
               return (<div className="options" key={index}>
-                          <input onClick={props.clickFunction} onChange={onChange} type="checkbox" value={section}/>
+                          <input onClick={clickFunction} onChange={onChange} type="checkbox" value={section}/>
                           <p>{section}</p>
                     </div>)
           })}
