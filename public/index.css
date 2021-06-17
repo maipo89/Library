@@ -122,7 +122,7 @@ strong {
     color: rgb(13 110 253);
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 628px) and (min-width: 0px) {
     .options-container {
         flex-direction: column;
         height: 600px;
