@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(247 247 247);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+}
+
+.library-button {
+    cursor: pointer;
+    margin: 20px;
+}
+
+.container-button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options {
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 150px;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.options-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.create-book {
+    display: block;
+}
+
+.options p {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.section-area-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.section-area {
+    margin: 40px 0 40px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(228, 228, 228);
+    padding: 20px;
+}
+
+.section-area h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.books-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.books-container input {
+    margin: 10px;
+    width: 150px;
+}
+
+.books-container button {
+    margin-left: 10px;
+}
+
+.book {
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid gray;
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgb(246, 246, 246);
+}
+
+.book p {
+    font-size: 18px;
+}
+
+strong {
+    color: rgb(13 110 253);
+}
+
+@media screen and (max-height: 600px) {
+    .options-container {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .option {
+        width: 70%;
+        margin: 20px 0 20px 0;
+    }
+
+    .section-area-container {
+        flex-direction: column;
+    }
+}
