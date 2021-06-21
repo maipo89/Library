@@ -5,7 +5,7 @@ function NonFiction() {
 
   return (
 
-    <div>
+    <div className="area-categories">
         <h1>Non Fiction</h1>
         <Book />
     </div>

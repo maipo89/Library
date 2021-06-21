@@ -1,11 +1,10 @@
-import React from "react"
-import Book from "./Book"
+import React, {useState} from "react"
 
 function SectionArea(props) {
+
    return (
        <div className="section-area">
-           <h1>{props.title}</h1>
-           <Book />
+           <h1 onClick={props.showCategories}>{props.title}</h1>
        </div>
    )
 }

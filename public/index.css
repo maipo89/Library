@@ -8,22 +8,52 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header {
+header, header div, header menu ul  {
     height: 80px;
     width: 100%;
-    background-color: rgb(247 247 247);
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+header div {
+    justify-content: flex-start;
+}
+
+header menu ul {
+    width: 400px;
+    margin-right: 40px;
+    list-style: none;
+    height: 10px;
+}
+
+header menu ul li {
+    cursor: pointer;
+}
+
+header menu ul li:hover {
+    color: #00c9ed;
+}
+
+header img {
+    width: 80px;
+    margin: 20px 0 0 20px;
 }
 
 header h1 {
     margin: 0;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: black;
+    font-weight: 500;
+    color: #bfbaba;
+    margin: 20px 0 0 10px;
+    font-size: 37px;
+}
+
+.divisor {
+    width: 2px;
+    height: 20px;
+    background-color: #bfbaba;
 }
 
 .library-button {
@@ -35,41 +65,70 @@ header h1 {
     margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    height: 200px;
+    background-color: #f6f6f6;
+}
+
+.categories {
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .options {
-    border: 1px solid rgb(197, 197, 197);
-    border-radius: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 250px;
-    height: 150px;
     padding: 20px;
     background-color: #f7f7f7;
+    width: 153px;
+    height: 120px;
 }
 
 .options-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 510px;
 }
 
 .create-book {
     display: block;
 }
 
+.categories h3 {
+    font-size: 22px;
+    margin: 40px 0 30px 0;
+    font-weight: 300;
+}
+
 .options p {
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 15px;
 }
 
 .section-area-container {
+    width: 600px;
+    height: 400px;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+.title-area {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+}
+
+.area-categories {
+    margin-left:  20px;
+}
+
+.area-categories h1 {
+    font-size: 30px;
+    margin-left: 10px;
 }
 
 .section-area {
@@ -79,20 +138,25 @@ header h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid rgb(228, 228, 228);
     padding: 20px;
 }
 
 .section-area h1 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 14px;
+    border: 1px solid #d0d0d0;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+
+.section-area h1:hover {
+    background-color: rgb(231, 231, 231);
 }
 
 .books-container {
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
 }
 
@@ -121,6 +185,35 @@ header h1 {
 strong {
     color: rgb(13 110 253);
 }
+
+.container-button div {
+    background-color: white;
+    height: 100px;
+    width: 430px;
+    margin-left: 20px;
+    border-radius: 0 10px 10px 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-button div h3 {
+    font-size: 22px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #00c9ed;
+    border: none;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #bfbaba;
+    border: none;
+}
+
 
 @media screen and (max-width: 628px) and (min-width: 0px) {
     .options-container {

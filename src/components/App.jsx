@@ -15,7 +15,10 @@ function App() {
     <div>
       <Header />
       <div className="container-button">
-        <button className="library-button btn btn-primary btn-lg" onClick={showSection}>New Library</button>
+        <div>
+          <h3>Create a New Library</h3>
+          <button className="library-button btn btn-primary btn-lg" onClick={showSection}>New Library</button>
+        </div>
       </div>
       { isClicked ? <Sections /> : null}
     </div>

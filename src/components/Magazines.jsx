@@ -5,7 +5,7 @@ function Magazines() {
 
   return (
 
-    <div>
+    <div className="area-categories">
         <h1>Magazines</h1>
         <Book />
     </div>
